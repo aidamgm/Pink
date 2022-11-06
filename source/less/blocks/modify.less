@@ -1,0 +1,389 @@
+.modify {
+  background-color: #ffffff;
+  color: #000000;
+
+  @media (min-width: @desktop-width) {
+    background-color: #ffffff;
+    padding-bottom: 26px;
+  }
+}
+
+.modify__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 43px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 68px;
+  }
+}
+
+.modify__filters {
+  padding-top: 20px;
+  padding-bottom: 41px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 58px;
+    padding-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+    padding: 57px 60px 57px 80px;
+  }
+}
+
+.modify__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 39px;
+  margin-right: 10px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+
+.modify__item {
+  display: flex;
+  margin-right: 35px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-right: 0;
+    align-items: center;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+
+    &--crop {
+      padding: 8px 18px 24px 4px;
+    }
+
+    &--colour {
+      padding: 27px 18px 23px 3px;
+    }
+
+    &--contrast {
+      padding: 26px 18px 27px 7px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--crop {
+      padding: 0 30px 12px 0;
+    }
+
+    &--colour {
+      padding: 15px 30px 14px 0;
+    }
+
+    &--contrast {
+      padding: 18px 30px 0 6px;
+      border-bottom: none;
+    }
+  }
+}
+
+.modify__upload {
+  color: #d22856;
+  width: 100%;
+  border-color: rgba(210, 40, 86, 1);
+  margin-bottom: 12px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+    margin-bottom: 0;
+    margin-right: 44px;
+  }
+}
+
+.modify__cancel {
+  color: rgba(40, 54, 69, 0.1);
+  width: 100%;
+  border-color: rgba(40, 54, 69, 0.1);
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:hover {
+    border-color: rgba(40, 54, 69, 0.3);
+    color: rgba(40, 54, 69, 0.3);
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(40, 54, 69, 0.3);
+    border-color: transparent;
+  }
+
+  @media (min-width: @tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 183px;
+  }
+}
+
+.modify__btn {
+  position: relative;
+  padding-top: 38px;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-right: 10px;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-right: 0;
+  }
+}
+
+.modify__btn::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  height: 1px;
+  z-index: 1;
+  background-color: rgba(40, 54, 69, 0.1);
+  width: 100vw;
+  left: calc(((100vw - 100%) / 2) * -1);
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+}
+
+.modify__wrapper {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.modify__scale {
+  position: relative;
+  height: 2px;
+  background-color: #283645;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    display: none;
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+      width: 202px;
+      margin-bottom: 0;
+    }
+
+    @media (min-width: @desktop-width) {
+      width: 288px;
+    }
+  }
+}
+
+.modify__toggle {
+  position: absolute;
+  top: -6px;
+  left: 193px;
+  width: 14px;
+  height: 14px;
+  background: #ffffff;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid #d22856;
+  cursor: pointer;
+
+  &:active {
+    background-color: #d22856;
+  }
+
+  @media (min-width: @tablet-width) {
+    &--crop {
+      left: 160px;
+    }
+
+    &--colour {
+      left: 25px;
+    }
+
+    &--contrast {
+      left: 95px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--crop {
+      left: 234px;
+    }
+
+    &--colour {
+      left: 35px;
+    }
+
+    &--contrast {
+      left: 135px;
+    }
+  }
+}
+
+.modify__inner {
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+.modify__picture {
+  display: block;
+  margin-bottom: 42px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    width: 300px;
+    height: 400px;
+    margin-bottom: 0;
+  }
+}
+
+.modify__box {
+  background-color: #f2f2f2;
+
+  @media (min-width: @desktop-width) {
+    background-color: #ffffff;
+  }
+}
+
+.modify__button {
+  display: flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: @tablet-width) {
+    &--crop {
+      margin-right: 29px;
+    }
+
+    &--colour {
+      margin-right: 28px;
+    }
+
+    &--contrast {
+      margin-right: 32px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--crop {
+      margin-right: 48px;
+    }
+
+    &--colour {
+      margin-right: 44px;
+    }
+
+    &--contrast {
+      margin-right: 54px;
+    }
+  }
+}
+
+.modify__icon {
+  fill: #283645;
+  opacity: 0.3;
+
+  @media (min-width: @tablet-width) {
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--colour {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
+
+    &--colour {
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
+  }
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    fill: #d22856;
+    opacity: 1;
+  }
+}

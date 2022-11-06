@@ -1,0 +1,77 @@
+.common {
+  background-color: #1d2631;
+  color: #ffffff;
+  background-image: url("../img/index/intro-mobile.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: auto auto;
+  padding-top: 93px;
+  padding-bottom: 78px;
+  margin-top: -66px;
+
+  &--form {
+    padding-bottom: 45px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/intro-mobile@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto 462px;
+  }
+
+  @media (min-width: @tablet-width) {
+    background-image: url("../img/catalog/back-tablet.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto auto;
+    padding-top: 177px;
+    margin-top: -110px;
+    padding-bottom: 127px;
+
+    &--form {
+      padding-bottom: 59px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/back-tablet@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: auto 729px;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-image: url("../img/catalog/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: auto auto;
+    padding-top: 170px;
+    margin-top: -110px;
+    padding-bottom: 89px;
+
+    &--form {
+      padding-bottom: 88px;
+    }
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/catalog/back-desktop@2x.jpg");
+      background-repeat: no-repeat;
+      background-position: center top;
+      background-size: auto 853px;
+    }
+  }
+}
+
+.common__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 33px;
+  margin: 0;
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    font-size: 50px;
+    line-height: 68px;
+  }
+}

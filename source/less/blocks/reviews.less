@@ -1,0 +1,191 @@
+.reviews {
+  position: relative;
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 50px;
+  padding-bottom: 28px;
+  margin-top: -43px;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 3px;
+    margin-top: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 72px;
+    padding-bottom: 41px;
+  }
+}
+
+.reviews__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 36px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.reviews__item {
+  text-align: center;
+
+  @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media (min-width: @desktop-width) {
+    &::before {
+      content: "";
+      background-image: url("../img/index/quotes.svg");
+      width: 79px;
+      height: 63px;
+      order: -2;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.reviews__author {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 13px;
+  color: #000000;
+  margin-top: 0;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 15px;
+    margin-top: 42px;
+    margin-bottom: 17px;
+  }
+
+  @media (min-width: @desktop-width) {
+    line-height: 18px;
+    font-size: 24px;
+  }
+}
+
+.reviews__info {
+  display: none;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 10px;
+  color: #283645;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-size: 18px;
+    line-height: 13px;
+  }
+}
+
+.reviews__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  order: -1;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 700px;
+  }
+}
+
+.reviews__toggles {
+  text-align: center;
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__toggle {
+  padding: 3px;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(40, 54, 69, 0.3);
+  cursor: pointer;
+  margin-right: 13px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  &:hover {
+    background-color: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+
+  &--current {
+    background-color: #ffffff;
+    border: 3px solid #283645;
+    pointer-events: none;
+  }
+}
+
+.reviews__slider {
+  position: relative;
+}
+
+.reviews__slider-invisible {
+  display: none;
+}
+
+.reviews__slider-button {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.reviews__slider-arrow {
+  fill: rgba(40, 54, 69, 0.3);
+
+  &--next {
+    transform: rotate(180deg);
+  }
+
+  &:hover {
+    fill: rgba(40, 54, 69, 0.6);
+  }
+
+  &:active {
+    fill: rgba(40, 54, 69, 0.1);
+  }
+}
+
+.reviews__slider-controls {
+  display: none;
+
+  @media (min-width: @desktop-width) {
+    position: absolute;
+    top: 48%;
+    display: flex;
+    justify-content: space-between;
+    width: 96%;
+  }
+}

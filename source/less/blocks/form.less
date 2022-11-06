@@ -1,0 +1,50 @@
+.form {
+  background-color: #ffffff;
+  color: #000000;
+  padding-top: 44px;
+  padding-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 90px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 16px;
+  }
+}
+
+.form__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 45px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: @tablet-width) {
+    max-width: 500px;
+    font-size: 18px;
+    line-height: 30px;
+    margin-bottom: 75px;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 800px;
+  }
+}
+
+.form__title span {
+  display: none;
+
+  @media (min-width: @tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline-block;
+  }
+}

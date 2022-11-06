@@ -1,0 +1,123 @@
+.main-header {
+  width: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: #ffffff;
+  padding-top: 21px;
+  padding-bottom: 21px;
+  z-index: 1;
+
+  @media (min-width: @tablet-width) {
+    margin: 0 auto;
+    padding-top: 27px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+.main-header__nav {
+  background-color: #283645;
+  box-shadow: 0 1px 0 #000000;
+}
+
+.main-header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  @media (min-width: @tablet-width) {
+    align-items: flex-end;
+  }
+
+  @media (min-width: @desktop-width) {
+    align-items: center;
+  }
+}
+
+.main-header__link {
+  display: flex;
+
+  &--current {
+    pointer-events: none;
+  }
+
+  @media (min-width: @desktop-width) {
+    padding-bottom: 14px;
+  }
+}
+
+.main-header__icon {
+  fill: #ffffff;
+
+  &:hover {
+    fill: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  &--mobile {
+    @media (min-width: @tablet-width) {
+      display: none;
+    }
+  }
+
+  &--tablet {
+    display: none;
+
+    @media (min-width: @tablet-width) {
+      display: block;
+    }
+
+    @media (min-width: @desktop-width) {
+      display: none;
+    }
+  }
+
+  &--desktop {
+    display: none;
+
+    @media (min-width: @desktop-width) {
+      display: block;
+    }
+  }
+}
+
+.main-header--nojs {
+  background-color: #283645;
+  padding-bottom: 0;
+  margin-bottom: 65px;
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 110px;
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: rgba(0, 0, 0, 0.3);
+    margin-bottom: 0;
+  }
+}
+
+.main-header--nojs .main-header__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -20px;
+  margin-right: -20px;
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.main-header--nojs .main-header__link {
+  margin-bottom: 20px;
+}
