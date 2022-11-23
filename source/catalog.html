@@ -5,43 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Academy: Пинк-Католог</title>
-    <link rel="stylesheet" href="css/style.min.css" />
-    <link rel="icon" href="favicon.ico" />
-    <link rel="icon" href="img/favicons/favicon-16x16.png" type="image/png" />
-    <link rel="icon" href="img/favicons/favicon-16x16.webp" type="image/webp" />
-    <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png" />
-    <link rel="icon" href="img/favicons/favicon-32x32.webp" type="image/webp" />
-    <link
-      rel="apple-touch-icon"
-      href="img/favicons/apple-icon-152x152.png"
-      type="image/png"
-    />
-    <link
-      rel="apple-touch-icon"
-      href="img/favicons/apple-icon-152x152.webp"
-      type="image/webp"
-    />
-    <link
-      rel="preload"
-      href="fonts/opensans.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/opensansbold.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="preload"
-      href="fonts/opensanslight.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <link rel="icon" href="favicon.ico"/>
+    <link rel="icon" href="img/favicons/favicon-16x16.png" type="image/png"/>
+    <link rel="icon" href="img/favicons/favicon-16x16.webp" type="image/webp"/>
+    <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png"/>
+    <link rel="icon" href="img/favicons/favicon-32x32.webp" type="image/webp"/>
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-152x152.png" type="image/png"/>
+    <link rel="apple-touch-icon" href="img/favicons/apple-icon-152x152.webp" type="image/webp"/>
+    <link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous"/>
   </head>
   <body class="page__body">
     <h1 class="visually-hidden">Фотографии.</h1>
@@ -50,33 +24,15 @@
     <header class="main-header main-header--nojs">
       <div class="container">
         <div class="main-header__wrapper">
-          <a class="main-header__link" href="index.html"
-            ><span class="visually-hidden">Логотип PINK.</span
-            ><svg
-              class="main-header__icon main-header__icon--mobile"
-              aria-hidden="true"
-              focusable="false"
-              width="74"
-              height="23"
-            >
+          <a class="main-header__link" href="index.html">
+            <span class="visually-hidden">Логотип PINK.</span>
+            <svg class="main-header__icon main-header__icon--mobile" aria-hidden="true" focusable="false" width="74" height="23">
               <use href="img/sprite/sprite.svg#pink-mobile"></use>
             </svg>
-            <svg
-              class="main-header__icon main-header__icon--tablet"
-              aria-hidden="true"
-              focusable="false"
-              width="145"
-              height="40"
-            >
+            <svg class="main-header__icon main-header__icon--tablet" aria-hidden="true" focusable="false" width="145" height="40">
               <use href="img/sprite/sprite.svg#pink-tablet"></use>
             </svg>
-            <svg
-              class="main-header__icon main-header__icon--desktop"
-              aria-hidden="true"
-              focusable="false"
-              width="147"
-              height="40"
-            >
+            <svg class="main-header__icon main-header__icon--desktop" aria-hidden="true" focusable="false" width="147" height="40">
               <use href="img/sprite/sprite.svg#pink-desktop"></use>
             </svg>
           </a>
@@ -90,19 +46,13 @@
                 <a class="navigation__link" href="index.html">Главная</a>
               </li>
               <li class="navigation__item">
-                <a
-                  class="navigation__link navigation__link--current"
-                  href="catalog.html"
-                  >Фотографии</a
-                >
+                <a class="navigation__link navigation__link--current" href="catalog.html">Фотографии</a>
               </li>
               <li class="navigation__item">
                 <a class="navigation__link" href="form.html">Конкурс</a>
               </li>
               <li class="navigation__item">
-                <a class="navigation__link" href="https://htmlacademy.ru/"
-                  >HTML Academy</a
-                >
+                <a class="navigation__link" href="https://htmlacademy.ru/">HTML Academy</a>
               </li>
             </ul>
           </nav>
@@ -116,10 +66,7 @@
       <!-- Photo-users -->
       <section class="common">
         <div class="container">
-          <h2 class="common__title">
-            Фотографии<br />
-            пользователей
-          </h2>
+          <h2 class="common__title">Фотографии<br/>пользователей</h2>
         </div>
       </section>
       <!-- Photo-users -->
@@ -128,135 +75,54 @@
       <section class="photo-card">
         <div class="container">
           <h2 class="visually-hidden">Фото-карточки.</h2>
-          <p class="photo-card__title">
-            Взгляните на фотографии, которые выкладывают пользователи! Видите,
-            как не хватает ваших?
-          </p>
+          <p class="photo-card__title">Взгляните на фотографии, которые выкладывают пользователи! Видите,как не хватает ваших?</p>
           <ul class="photo-card__list">
             <li class="photo-card__item comment">
               <span class="photo-card__panorama">Панорама дня</span>
-              <a class="comment__link" href="#"
-                ><picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                      img/catalog/panorama-desktop.jpg    1x,
-                      img/catalog/panorama-desktop@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/panorama-desktop.webp    1x,
-                      img/catalog/panorama-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    srcset="
-                      img/catalog/panorama-tablet.jpg    1x,
-                      img/catalog/panorama-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/panorama-tablet.webp    1x,
-                      img/catalog/panorama-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/catalog/panorama-mobile.webp    1x,
-                      img/catalog/panorama-mobile@2x.webp 2x
-                    "
-                  />
-                  <img
-                    class="comment__picture"
-                    src="img/catalog/panorama-mobile.jpg"
-                    srcset="
-                      img/catalog/panorama-mobile.jpg    1x,
-                      img/catalog/panorama-mobile@2x.jpg 2x
-                    "
-                    width="320"
-                    height="137"
-                    alt="Панорама."
-                  /> </picture
-              ></a>
-              <b class="comment__author"
-                >Анна <span class="comment__time">(5 минут назад)</span></b
-              >
-              <p class="comment__text">
-                Прыгать или нет? Напишите в комментарии свой совет и
-                смотрите&nbsp;прямую трансляцию в перископе, задавайте свои
-                вопросы!
-              </p>
+              <a class="comment__link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/catalog/panorama-desktop.jpg    1x,
+                      img/catalog/panorama-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/panorama-desktop.webp    1x,
+                      img/catalog/panorama-desktop@2x.webp 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/catalog/panorama-tablet.jpg    1x,
+                      img/catalog/panorama-tablet@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" type="image/webp" srcset="img/catalog/panorama-tablet.webp    1x,
+                      img/catalog/panorama-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/catalog/panorama-mobile.webp    1x,
+                      img/catalog/panorama-mobile@2x.webp 2x"/>
+                  <img class="comment__picture" src="img/catalog/panorama-mobile.jpg"
+                    srcset="img/catalog/panorama-mobile.jpg    1x,
+                      img/catalog/panorama-mobile@2x.jpg 2x"  width="320" height="137" alt="Панорама."/>
+                </picture>
+              </a>
+              <b class="comment__author">Анна <span class="comment__time">(5 минут назад)</span></b>
+              <p class="comment__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите&nbsp;прямую трансляцию в перископе, задавайте свои вопросы!</p>
               <p class="comment__like">
                 <span class="visually-hidden">Лайк.</span>
                 Нравится: 215
               </p>
             </li>
             <li class="photo-card__item comment">
-              <a class="comment__link" href="#"
-                ><picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                      img/catalog/photo-1-desktop.jpg    1x,
-                      img/catalog/photo-1-desktop@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-1-desktop.webp    1x,
-                      img/catalog/photo-1-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    srcset="
-                      img/catalog/photo-1-tablet.jpg    1x,
-                      img/catalog/photo-1-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-1-tablet.webp    1x,
-                      img/catalog/photo-1-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-1-mobile.webp    1x,
-                      img/catalog/photo-1-mobile@2x.webp 2x
-                    "
-                  />
-                  <img
-                    class="comment__picture"
-                    src="img/catalog/photo-1-mobile.jpg"
-                    srcset="
-                      img/catalog/photo-1-mobile.jpg    1x,
-                      img/catalog/photo-1-mobile@2x.jpg 2x
-                    "
-                    width="280"
-                    height="180"
-                    alt="Машина."
-                  /> </picture
-              ></a>
-              <b class="comment__author"
-                >Левон<span class="comment__time">(5 часов назад)</span></b
-              >
-              <p class="comment__text">
-                Вчера он на луну летал, сегодня в руки к нам попал.
-              </p>
+              <a class="comment__link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-1-desktop.jpg    1x,
+                      img/catalog/photo-1-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-1-desktop.webp    1x,
+                      img/catalog/photo-1-desktop@2x.webp 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-1-tablet.jpg    1x,
+                      img/catalog/photo-1-tablet@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" type="image/webp" srcset="img/catalog/photo-1-tablet.webp    1x,
+                    img/catalog/photo-1-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/catalog/photo-1-mobile.webp    1x,
+                      img/catalog/photo-1-mobile@2x.webp 2x"/>
+                  <img class="comment__picture" src="img/catalog/photo-1-mobile.jpg" srcset="img/catalog/photo-1-mobile.jpg    1x,
+                      img/catalog/photo-1-mobile@2x.jpg 2x" width="280" height="180" alt="Машина."/>
+                </picture>
+              </a>
+              <b class="comment__author">Левон<span class="comment__time">(5 часов назад)</span></b>
+              <p class="comment__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
               <p class="comment__like">
                 <span class="visually-hidden">Лайк.</span>
                 Нравится: 356
@@ -265,59 +131,22 @@
             <li class="photo-card__item comment">
               <a class="comment__link" href="#">
                 <picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                      img/catalog/photo-2-desktop.jpg    1x,
-                      img/catalog/photo-2-desktop@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-2-desktop.webp    1x,
-                      img/catalog/photo-2-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    srcset="
-                      img/catalog/photo-2-tablet.jpg    1x,
-                      img/catalog/photo-2-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-2-tablet.webp    1x,
-                      img/catalog/photo-2-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-2-mobile.webp    1x,
-                      img/catalog/photo-2-mobile@2x.webp 2x
-                    "
-                  />
-                  <img
-                    class="comment__picture"
-                    src="img/catalog/photo-2-mobile.jpg"
-                    srcset="
-                      img/catalog/photo-2-mobile.jpg    1x,
-                      img/catalog/photo-2-mobile@2x.jpg 2x
-                    "
-                    width="280"
-                    height="180"
-                    alt="Барабанная установка."
-                  />
+                  <source media="(min-width: 1200px)"
+                    srcset="img/catalog/photo-2-desktop.jpg    1x,
+                      img/catalog/photo-2-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-2-desktop.webp    1x,
+                      img/catalog/photo-2-desktop@2x.webp 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-2-tablet.jpg    1x,
+                      img/catalog/photo-2-tablet@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" type="image/webp" srcset="img/catalog/photo-2-tablet.webp    1x,
+                      img/catalog/photo-2-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/catalog/photo-2-mobile.webp    1x,
+                      img/catalog/photo-2-mobile@2x.webp 2x"/>
+                  <img class="comment__picture" src="img/catalog/photo-2-mobile.jpg" srcset="img/catalog/photo-2-mobile.jpg    1x,
+                      img/catalog/photo-2-mobile@2x.jpg 2x" width="280" height="180" alt="Барабанная установка."/>
                 </picture>
               </a>
-              <b class="comment__author"
-                >Антон<span class="comment__time">(12 часов назад)</span></b
-              >
+              <b class="comment__author">Антон<span class="comment__time">(12 часов назад)</span></b>
               <p class="comment__text">Соседи будут рады!</p>
               <p class="comment__like">
                 <span class="visually-hidden">Лайк.</span>
@@ -325,123 +154,47 @@
               </p>
             </li>
             <li class="photo-card__item comment">
-              <a class="comment__link" href="#"
-                ><picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                      img/catalog/photo-3-desktop.jpg    1x,
-                      img/catalog/photo-3-desktop@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-3-desktop.webp    1x,
-                      img/catalog/photo-3-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    srcset="
-                      img/catalog/photo-3-tablet.jpg    1x,
-                      img/catalog/photo-3-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-3-tablet.webp    1x,
-                      img/catalog/photo-3-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-3-mobile.webp    1x,
-                      img/catalog/photo-3-mobile@2x.webp 2x
-                    "
-                  />
-                  <img
-                    class="comment__picture"
-                    src="img/catalog/photo-3-mobile.jpg"
-                    srcset="
-                      img/catalog/photo-3-mobile.jpg    1x,
-                      img/catalog/photo-3-mobile@2x.jpg 2x
-                    "
-                    width="280"
-                    height="180"
-                    alt="Стеклянный потолок."
-                  /> </picture
-              ></a>
-              <b class="comment__author"
-                >Борис<span class="comment__time">(20 часов назад)</span></b
-              >
-              <p class="comment__text">
-                Здесь могла быть ваша цитата о высоком и вечном.
-              </p>
+              <a class="comment__link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-3-desktop.jpg    1x,
+                      img/catalog/photo-3-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset=" img/catalog/photo-3-desktop.webp    1x,
+                      img/catalog/photo-3-desktop@2x.webp 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-3-tablet.jpg    1x,
+                      img/catalog/photo-3-tablet@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" type="image/webp" srcset="img/catalog/photo-3-tablet.webp    1x,
+                      img/catalog/photo-3-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/catalog/photo-3-mobile.webp    1x,
+                      img/catalog/photo-3-mobile@2x.webp 2x"/>
+                  <img class="comment__picture" src="img/catalog/photo-3-mobile.jpg" srcset="img/catalog/photo-3-mobile.jpg    1x,
+                      img/catalog/photo-3-mobile@2x.jpg 2x" width="280" height="180" alt="Стеклянный потолок."/>
+                </picture>
+              </a>
+              <b class="comment__author">Борис<span class="comment__time">(20 часов назад)</span></b>
+              <p class="comment__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
               <p class="comment__like">
                 <span class="visually-hidden">Лайк.</span>
                 Нравится: 215
               </p>
             </li>
             <li class="photo-card__item comment">
-              <a class="comment__link" href="#"
-                ><picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                      img/catalog/photo-4-desktop.jpg    1x,
-                      img/catalog/photo-4-desktop@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-4-desktop.webp    1x,
-                      img/catalog/photo-4-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    srcset="
-                      img/catalog/photo-4-tablet.jpg    1x,
-                      img/catalog/photo-4-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-4-tablet.webp    1x,
-                      img/catalog/photo-4-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-4-mobile.webp    1x,
-                      img/catalog/photo-4-mobile@2x.webp 2x
-                    "
-                  />
-                  <img
-                    class="comment__picture"
-                    src="img/catalog/photo-4-mobile.jpg"
-                    srcset="
-                      img/catalog/photo-4-mobile.jpg    1x,
-                      img/catalog/photo-4-mobile@2x.jpg 2x
-                    "
-                    width="280"
-                    height="180"
-                    alt="Шатер."
-                  /> </picture
-              ></a>
-              <b class="comment__author"
-                >Сергей<span class="comment__time">(25 часов назад)</span></b
-              >
+              <a class="comment__link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-4-desktop.jpg    1x,
+                      img/catalog/photo-4-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-4-desktop.webp    1x,
+                      img/catalog/photo-4-desktop@2x.webp 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-4-tablet.jpg    1x,
+                      img/catalog/photo-4-tablet@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" type="image/webp" srcset="img/catalog/photo-4-tablet.webp    1x,
+                      img/catalog/photo-4-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/catalog/photo-4-mobile.webp    1x,
+                      img/catalog/photo-4-mobile@2x.webp 2x"/>
+                  <img class="comment__picture" src="img/catalog/photo-4-mobile.jpg" srcset="img/catalog/photo-4-mobile.jpg    1x,
+                      img/catalog/photo-4-mobile@2x.jpg 2x" width="280" height="180" alt="Шатер."/>
+                </picture>
+              </a>
+              <b class="comment__author">Сергей<span class="comment__time">(25 часов назад)</span></b>
               <p class="comment__text">Самая кубанская в мире!</p>
               <p class="comment__like">
                 <span class="visually-hidden">Лайк.</span>
@@ -449,60 +202,23 @@
               </p>
             </li>
             <li class="photo-card__item comment">
-              <a class="comment__link" href="#"
-                ><picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                      img/catalog/photo-5-desktop.jpg    1x,
-                      img/catalog/photo-5-desktop@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-5-desktop.webp    1x,
-                      img/catalog/photo-5-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    srcset="
-                      img/catalog/photo-5-tablet.jpg    1x,
-                      img/catalog/photo-5-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-5-tablet.webp    1x,
-                      img/catalog/photo-5-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-5-mobile.webp    1x,
-                      img/catalog/photo-5-mobile@2x.webp 2x
-                    "
-                  />
-                  <img
-                    class="comment__picture"
-                    src="img/catalog/photo-5-mobile.jpg"
-                    srcset="
-                      img/catalog/photo-5-mobile.jpg    1x,
-                      img/catalog/photo-5-mobile@2x.jpg 2x
-                    "
-                    width="280"
-                    height="180"
-                    alt="Человек на горе."
-                  /> </picture
-              ></a>
-              <b class="comment__author"
-                >Максим<span class="comment__time">(40 часов назад)</span></b
-              >
+              <a class="comment__link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-5-desktop.jpg    1x,
+                      img/catalog/photo-5-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-5-desktop.webp    1x,
+                      img/catalog/photo-5-desktop@2x.webp 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-5-tablet.jpg    1x,
+                      img/catalog/photo-5-tablet@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" type="image/webp" srcset="img/catalog/photo-5-tablet.webp    1x,
+                      img/catalog/photo-5-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/catalog/photo-5-mobile.webp    1x,
+                      img/catalog/photo-5-mobile@2x.webp 2x"/>
+                  <img class="comment__picture" src="img/catalog/photo-5-mobile.jpg" srcset="img/catalog/photo-5-mobile.jpg    1x,
+                      img/catalog/photo-5-mobile@2x.jpg 2x" width="280" height="180" alt="Человек на горе."/>
+                </picture>
+              </a>
+              <b class="comment__author">Максим<span class="comment__time">(40 часов назад)</span></b>
               <p class="comment__text">Где снег-то?</p>
               <p class="comment__like">
                 <span class="visually-hidden">Лайк.</span>
@@ -510,60 +226,23 @@
               </p>
             </li>
             <li class="photo-card__item comment">
-              <a class="comment__link" href="#"
-                ><picture>
-                  <source
-                    media="(min-width: 1200px)"
-                    srcset="
-                      img/catalog/photo-6-desktop.jpg    1x,
-                      img/catalog/photo-6-desktop@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 1200px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-6-desktop.webp    1x,
-                      img/catalog/photo-6-desktop@2x.webp 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    srcset="
-                      img/catalog/photo-6-tablet.jpg    1x,
-                      img/catalog/photo-6-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-6-tablet.webp    1x,
-                      img/catalog/photo-6-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/catalog/photo-6-mobile.webp    1x,
-                      img/catalog/photo-6-mobile@2x.webp 2x
-                    "
-                  />
-                  <img
-                    class="comment__picture"
-                    src="img/catalog/photo-6-mobile.jpg"
-                    srcset="
-                      img/catalog/photo-6-mobile.jpg    1x,
-                      img/catalog/photo-6-mobile@2x.jpg 2x
-                    "
-                    width="280"
-                    height="180"
-                    alt="Крыло сымолета."
-                  /> </picture
-              ></a>
-              <b class="comment__author"
-                >Надежда<span class="comment__time">(45 часов назад)</span></b
-              >
+              <a class="comment__link" href="#">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/catalog/photo-6-desktop.jpg    1x,
+                      img/catalog/photo-6-desktop@2x.jpg 2x"/>
+                  <source media="(min-width: 1200px)" type="image/webp" srcset="img/catalog/photo-6-desktop.webp    1x,
+                      img/catalog/photo-6-desktop@2x.webp 2x"/>
+                  <source media="(min-width: 660px)" srcset="img/catalog/photo-6-tablet.jpg    1x,
+                      img/catalog/photo-6-tablet@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" type="image/webp" srcset="img/catalog/photo-6-tablet.webp    1x,
+                      img/catalog/photo-6-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/catalog/photo-6-mobile.webp    1x,
+                      img/catalog/photo-6-mobile@2x.webp 2x"/>
+                  <img class="comment__picture" src="img/catalog/photo-6-mobile.jpg" srcset="img/catalog/photo-6-mobile.jpg    1x,
+                      img/catalog/photo-6-mobile@2x.jpg 2x" width="280" height="180" alt="Крыло сымолета."/>
+                </picture>
+              </a>
+              <b class="comment__author">Надежда<span class="comment__time">(45 часов назад)</span></b>
               <p class="comment__text">Всем GM и взаимные лайки!</p>
               <p class="comment__like">
                 <span class="visually-hidden">Лайк.</span>
@@ -579,134 +258,62 @@
       <section class="modify">
         <div class="container">
           <h2 class="visually-hidden">Изменить изображение.</h2>
-          <p class="modify__title">
-            Затмите их всех! <br />
+          <p class="modify__title">Затмите их всех! <br />
             Выкладывайте все, что накопилось в телефоне!
           </p>
         </div>
         <div class="modify__box">
           <div class="container">
-            <form
-              class="modify__filters"
-              action="https://echo.htmlacademy.ru/"
-              method="post"
-            >
+            <form class="modify__filters"  action="https://echo.htmlacademy.ru/" method="post">
               <div class="modify__wrapper">
                 <picture>
-                  <source
-                    media="(min-width: 660px)"
-                    srcset="
-                      img/catalog/modify-tablet.jpg    1x,
-                      img/catalog/modify-tablet@2x.jpg 2x
-                    "
-                  />
-                  <source
-                    media="(min-width: 660px)"
-                    type="image/webp"
-                    srcset="
-                      img/catalog/modify-tablet.webp    1x,
-                      img/catalog/modify-tablet@2x.webp 2x
-                    "
-                  />
-                  <source
-                    type="image/webp"
-                    srcset="
-                      img/catalog/modify-mobile.webp    1x,
-                      img/catalog/modify-mobile@2x.webp 2x
-                    "
-                  />
-                  <img
-                    class="modify__picture"
-                    src="img/catalog/modify-mobile.jpg"
-                    srcset="
-                      img/catalog/modify-mobile.jpg    1x,
-                      img/catalog/modify-mobile@2x.jpg 2x
-                    "
-                    width="280"
-                    height="374"
-                    alt="Зимняя дорога."
-                  />
+                  <source media="(min-width: 660px)" srcset="img/catalog/modify-tablet.jpg    1x,
+                      img/catalog/modify-tablet@2x.jpg 2x"/>
+                  <source media="(min-width: 660px)" type="image/webp" srcset="img/catalog/modify-tablet.webp    1x,
+                      img/catalog/modify-tablet@2x.webp 2x"/>
+                  <source type="image/webp" srcset="img/catalog/modify-mobile.webp    1x,
+                      img/catalog/modify-mobile@2x.webp 2x"/>
+                  <img class="modify__picture" src="img/catalog/modify-mobile.jpg" srcset=" img/catalog/modify-mobile.jpg    1x,
+                      img/catalog/modify-mobile@2x.jpg 2x " width="280" height="374" alt="Зимняя дорога."/>
                 </picture>
                 <div class="modify__inner">
                   <ul class="modify__list">
                     <li class="modify__item modify__item--crop">
                       <span class="visually-hidden">Обрезка.</span>
-                      <button
-                        class="modify__button modify__button--crop"
-                        type="button"
-                      >
-                        <svg
-                          class="modify__icon modify__icon--mobile modify__icon--crop"
-                          aria-hidden="true"
-                          focusable="false"
-                          width="44"
-                          height="44"
-                        >
+                      <button class="modify__button modify__button--crop" type="button">
+                        <svg class="modify__icon modify__icon--mobile modify__icon--crop" aria-hidden="true" focusable="false" width="44" height="44">
                           <use href="img/sprite/sprite.svg#crop"></use>
                         </svg>
                       </button>
                       <div class="modify__scale modify__scale--tablet">
-                        <button
-                          class="modify__toggle modify__toggle--crop"
-                          type="button"
-                        >
-                          <span class="visually-hidden"
-                            >Увидеть изменения.</span
-                          >
+                        <button class="modify__toggle modify__toggle--crop" type="button">
+                          <span class="visually-hidden">Увидеть изменения.</span>
                         </button>
                       </div>
                     </li>
                     <li class="modify__item modify__item--colour">
                       <span class="visually-hidden">Цвет.</span>
-                      <button
-                        class="modify__button modify__button--colour"
-                        type="button"
-                      >
-                        <svg
-                          class="modify__icon modify__icon--mobile modify__icon--colour"
-                          aria-hidden="true"
-                          focusable="false"
-                          width="48"
-                          height="43"
-                        >
+                      <button class="modify__button modify__button--colour" type="button">
+                        <svg class="modify__icon modify__icon--mobile modify__icon--colour" aria-hidden="true" focusable="false" width="48" height="43">
                           <use href="img/sprite/sprite.svg#colour"></use>
                         </svg>
                       </button>
                       <div class="modify__scale modify__scale--tablet">
-                        <button
-                          class="modify__toggle modify__toggle--colour"
-                          type="button"
-                        >
-                          <span class="visually-hidden"
-                            >Увидеть изменения.</span
-                          >
+                        <button class="modify__toggle modify__toggle--colour" type="button">
+                          <span class="visually-hidden">Увидеть изменения.</span>
                         </button>
                       </div>
                     </li>
                     <li class="modify__item modify__item--contrast">
                       <span class="visually-hidden">Контраст.</span>
-                      <button
-                        class="modify__button modify__button--contrast"
-                        type="button"
-                      >
-                        <svg
-                          class="modify__icon modify__icon--mobile modify__icon--contrast"
-                          aria-hidden="true"
-                          focusable="false"
-                          width="32"
-                          height="32"
-                        >
+                      <button class="modify__button modify__button--contrast" type="button">
+                        <svg class="modify__icon modify__icon--mobile modify__icon--contrast" aria-hidden="true" focusable="false" width="32" height="32">
                           <use href="img/sprite/sprite.svg#contrast"></use>
                         </svg>
                       </button>
                       <div class="modify__scale modify__scale--tablet">
-                        <button
-                          class="modify__toggle modify__toggle--contrast"
-                          type="button"
-                        >
-                          <span class="visually-hidden"
-                            >Увидеть изменения.</span
-                          >
+                        <button class="modify__toggle modify__toggle--contrast" type="button">
+                          <span class="visually-hidden">Увидеть изменения.</span>
                         </button>
                       </div>
                     </li>
@@ -717,12 +324,8 @@
                     </button>
                   </div>
                   <div class="modify__btn">
-                    <button class="modify__upload button" type="submit">
-                      Запостить
-                    </button>
-                    <button class="modify__cancel button" type="reset">
-                      Отмена
-                    </button>
+                    <button class="modify__upload button" type="submit">Запостить</button>
+                    <button class="modify__cancel button" type="reset">Отмена</button>
                   </div>
                 </div>
               </div>
@@ -737,58 +340,30 @@
     <!-- Footer  -->
     <footer class="main-footer">
       <div class="container main-footer__wrapper">
-        <a class="main-footer__logo" href="index.html"
-          ><span class="visually-hidden">Логотип PINK.</span>
-          <svg
-            class="main-footer__icon"
-            aria-hidden="true"
-            focusable="false"
-            width="145"
-            height="40"
-          >
+        <a class="main-footer__logo" href="index.html"><span class="visually-hidden">Логотип PINK.</span>
+          <svg class="main-footer__icon" aria-hidden="true" focusable="false" width="145" height="40">
             <use href="img/sprite/sprite.svg#pink-footer"></use>
           </svg>
         </a>
         <div class="main-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#"
-                ><span class="visually-hidden">Вконтакте.</span>
-                <svg
-                  class="social__icon"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="18"
-                  height="18"
-                >
+              <a class="social__link" href="#"><span class="visually-hidden">Вконтакте.</span>
+                <svg class="social__icon" aria-hidden="true" focusable="false" width="18" height="18">
                   <use href="img/sprite/sprite.svg#social-vk"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#"
-                ><span class="visually-hidden">Телеграм.</span>
-                <svg
-                  class="social__icon"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="18"
-                  height="18"
-                >
+              <a class="social__link" href="#"><span class="visually-hidden">Телеграм.</span>
+                <svg class="social__icon" aria-hidden="true" focusable="false" width="18" height="18">
                   <use href="img/sprite/sprite.svg#social-telegram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#"
-                ><span class="visually-hidden">Ютуб.</span>
-                <svg
-                  class="social__icon"
-                  aria-hidden="true"
-                  focusable="false"
-                  width="18"
-                  height="18"
-                >
+              <a class="social__link" href="#"><span class="visually-hidden">Ютуб.</span>
+                <svg class="social__icon" aria-hidden="true" focusable="false" width="18" height="18">
                   <use href="img/sprite/sprite.svg#social-youtube"></use>
                 </svg>
               </a>
@@ -797,18 +372,8 @@
         </div>
         <div class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
-          <a
-            class="copyright__link"
-            href="https://htmlacademy.ru/"
-            aria-label="Сайт HTML Academy."
-            ><span class="visually-hidden">HTML Academy</span>
-            <svg
-              class="copyright__icon"
-              aria-hidden="true"
-              focusable="false"
-              width="27"
-              height="34"
-            >
+          <a class="copyright__link" href="https://htmlacademy.ru/" aria-label="Сайт HTML Academy."><span class="visually-hidden">HTML Academy</span>
+            <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34">
               <use href="img/sprite/sprite.svg#html-academy-icon"></use>
             </svg>
           </a>
