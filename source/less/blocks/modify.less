@@ -205,8 +205,8 @@
 
 .modify__scale {
   position: relative;
-  height: 2px;
-  background-color: #283645;
+  // height: 2px;
+  // background-color: #283645;
   width: 240px;
   margin: 0 auto;
   margin-bottom: 34px;
@@ -225,10 +225,28 @@
     }
 
     @media (min-width: @desktop-width) {
-      width: 288px;
+      width: 200px;
     }
   }
 }
+
+.modify__range {
+  position: relative;
+  height: 2px;
+  background-color: #283645;
+  width: 215px;
+  margin: 0 auto;
+  margin-bottom: 34px;
+
+@media (min-width: @tablet-width) {
+  width: 215px;
+ }
+
+ @media (min-width: @desktop-width-width) {
+  width: 320px;
+ }
+}
+
 
 .modify__toggle {
   position: absolute;

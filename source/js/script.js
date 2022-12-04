@@ -22,3 +22,18 @@ navToggle.addEventListener("click", function () {
     navMain.classList.remove("navigation--opened");
   }
 });
+
+
+let likes = document.querySelectorAll(".comment__likes");
+let likesCounter = document.querySelector(".likes-counter")
+
+likes.addEventListener("click", function () {
+  if (likesCounter.classList.contains("comment__likes--active")) {
+    navMain.classList.remove("comment__likes--active");
+    navMain.classList.add("comment__likes");
+  } else {
+    navMain.classList.add("comment__likes--active");
+    navMain.classList.remove("comment__likes");
+  }
+});
+

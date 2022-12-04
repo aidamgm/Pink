@@ -244,8 +244,8 @@
               </a>
               <b class="comment__author">Надежда<span class="comment__time">(45 часов назад)</span></b>
               <p class="comment__text">Всем GM и взаимные лайки!</p>
-              <p class="comment__like">
-                <span class="visually-hidden">Лайк.</span>
+              <p class="comment__like likes-counter">
+                <span class="visually-hidden comment__likes">Лайк.</span>
                 Нравится: 2560
               </p>
             </li>
@@ -286,7 +286,7 @@
                         </svg>
                       </button>
                       <div class="modify__scale modify__scale--tablet">
-                        <button class="modify__toggle modify__toggle--crop" type="button">
+                        <input id="range" type="range" min="100" max="200" step="1" class="modify__range modify__range--crop">
                           <span class="visually-hidden">Увидеть изменения.</span>
                         </button>
                       </div>
@@ -299,9 +299,11 @@
                         </svg>
                       </button>
                       <div class="modify__scale modify__scale--tablet">
-                        <button class="modify__toggle modify__toggle--colour" type="button">
+                        <input id="range" type="range" min="100" max="200" step="1" class="modify__range modify__range--crop">
+
+                        <!-- <button class="modify__toggle modify__toggle--colour" type="button"> -->
                           <span class="visually-hidden">Увидеть изменения.</span>
-                        </button>
+                        <!-- </button> -->
                       </div>
                     </li>
                     <li class="modify__item modify__item--contrast">
@@ -312,9 +314,11 @@
                         </svg>
                       </button>
                       <div class="modify__scale modify__scale--tablet">
-                        <button class="modify__toggle modify__toggle--contrast" type="button">
+                        <input id="range" type="range" min="100" max="200" step="1" class="modify__range modify__range--crop">
+
+                        <!-- <button class="modify__toggle modify__toggle--contrast" type="button"> -->
                           <span class="visually-hidden">Увидеть изменения.</span>
-                        </button>
+                        <!-- </button> -->
                       </div>
                     </li>
                   </ul>
